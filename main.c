@@ -16,9 +16,9 @@ int main()
 
   end_time = clock();
 
-  elapsed_time = (double)(end_time - start_time);
+  elapsed_time = (double)(end_time - start_time) / CLOCKS_PER_SEC;
 
-  printf("计时器已停止, 经过%.2f 秒\n", elapsed_time);
+  printf("计时器已停止, 经过%f 秒\n", elapsed_time);
 
   return 0;
 }
